@@ -1,16 +1,99 @@
-# React + Vite
+# Mini-Project Day 26: DibiTech — React Styling Mini Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Profil
 
-Currently, two official plugins are available:
+- **Nama:** Ilham Dwi Putranto
+- **Kelas:** Full-Stack Web Development
+- **GitHub:** [ilhamdwiputranto](https://github.com/ilhamdwiputranto)
+- **LinkedIn:** [Ilham Dwi Putranto](https://www.linkedin.com/in/ilham-dwi-putranto)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+Proyek ini memindahkan halaman utama marketplace DibiTech, yang sebelumnya di buat dengan HTML dan CSS biasa, ke React dengan Tailwind CSS.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Teknologi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- Tailwind CSS
+
+---
+
+## Struktur Folder
+
+```
+dibitech-react-styling/
+├── public/
+│ └── images/
+├── src/
+│ ├── components/
+│ │ ├── Card.jsx
+│ │ ├── FeaturedCard.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Header.jsx
+│ │ ├── Hero.jsx
+│ │ └── ProductSection.jsx
+│ ├── data/
+│ │ └── items.js
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── vite.config.js`
+```
+
+---
+
+## Komponen
+
+Pada tugas ini, halaman utama disusun ke dalam komponen dan tiap bagian memiliki peran yang jelas:
+
+- `Header.jsx` — Navigasi utama, logo, dan toggle menu untuk layar kecil.
+- `Hero.jsx` — Bagian banner utama dengan judul dan deskripsi yang dikirim lewat `props`.
+- `ProductSection.jsx` — Membungkus judul bagian (_Categories_ dan _Trending_) serta mengatur layout grid.
+- `Card.jsx` — Komponen kartu untuk menampilkan gambar, judul, deskripsi, dan harga dari data yang dipassing.
+- `FeaturedCard.jsx` — Bagian produk unggulan dengan data yang dikirim melalui `props`.
+- `Footer.jsx` — Navigasi bawah, tautan media sosial, dan informasi hak cipta.
+- `src/data/items.js` — Menyimpan data statis untuk daftar kategori dan item trending.
+
+---
+
+## Alur data
+
+Data kategori dan trending ada di `src/data/items.js`. `App.jsx` mengimpornya
+dan mengirim ke `ProductSection` lewat props `items`. Di sana dipetakan
+lagi menjadi beberapa `Card`.
+
+---
+
+## Cara menjalankan
+
+1. Pastikan asset gambar ada di folder `public/images/`
+2. Instal seluruh dependensi:
+   ```bash
+   npm install
+   ```
+3. Jalankan:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## Kesesuaian kriteria
+
+- [x] 1 halaman utama tanpa React Router
+- [x] Pemecahan komponen
+- [x] Styling dengan Tailwind
+- [x] Penggunaan props
+
+---
+
+## Tampilan
+
+![Desktop](docs/desktop.png)
+![Mobile](docs/mobile.png)
