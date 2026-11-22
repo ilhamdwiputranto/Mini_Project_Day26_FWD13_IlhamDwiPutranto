@@ -95,5 +95,9 @@ lagi menjadi beberapa `Card`.
 
 ## Tampilan
 
+Desktop:
 ![Desktop](docs/desktop.png)
+
+Mobile:
+
 ![Mobile](docs/mobile.png)
