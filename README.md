@@ -9,7 +9,7 @@
 
 ---
 
-Proyek ini memindahkan halaman utama marketplace DibiTech, yang sebelumnya di buat dengan HTML dan CSS biasa, ke React dengan Tailwind CSS.
+Proyek ini memindahkan halaman utama marketplace DibiTech, yang sebelumnya dibuat dengan HTML dan CSS biasa, ke React dengan Tailwind CSS.
 
 ---
 
@@ -50,7 +50,7 @@ dibitech-react-styling/
 
 ## Komponen
 
-Pada tugas ini, halaman utama disusun ke dalam komponen dan tiap bagian memiliki peran yang jelas:
+Pada tugas ini, halaman utama disusun ke dalam komponen dan tiap bagian memiliki peran:
 
 - `Header.jsx` — Navigasi utama, logo, dan toggle menu untuk layar kecil.
 - `Hero.jsx` — Bagian banner utama dengan judul dan deskripsi yang dikirim lewat `props`.
